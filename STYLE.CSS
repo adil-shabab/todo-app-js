@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(205, 251, 175), rgb(250, 198, 126)) no-repeat;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#input{
+    border: none;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 0 10px;
+}
+button{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.btn{
+    display: flex;
+    margin-bottom: 20px;
+}
+.list-item{
+    background: linear-gradient(rgb(255, 255, 255), rgb(250, 136, 95));
+    width: 380px;
+    list-style: none;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    animation: 1s ease;
+}
+@keyframes slide {
+    0%{
+        opacity: 0;
+        transform: rotateX(60deg) translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg) translateY(0px);
+    }
+    
+}
+.icons{
+    background-color: white;
+    color: black;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.icon{
+    background-color: white;
+    margin-left: auto;
+    margin-right: 10px;
+    color: black;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.slideOut{
+   transform: rotateX(60deg) translateY(-10px);
+   transition: 1s;
+   opacity: 0;
+}
+
